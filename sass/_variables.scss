@@ -1,0 +1,17 @@
+// COLORS
+$section-1: hsl(263, 55%, 52%);
+$section-2: hsl(217, 19%, 35%);
+$section-3: hsl(0, 0%, 100%);
+$section-4: hsl(219, 29%, 14%);
+$light-gray: hsl(0, 0%, 81%);
+$light-gb: hsl(210, 46%, 95%);
+
+
+$font-weights: (
+  "regular": 500,
+  "bold": 600,
+);
+
+@function font-weight($style) {
+  @return map-get($map: $font-weights, $key: $style);
+}
